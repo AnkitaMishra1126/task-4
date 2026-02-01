@@ -1,0 +1,637 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* nav bar*/
+nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5rem 0;
+    z-index: 999;
+    position: sticky;
+}
+/*inner-nav bar*/
+.nav-bar .inner-nav{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0 2rem;
+}
+/*logo*/
+.nav-bar .inner-nav .logo {
+    text-align: center;
+    inline-size: 160px;
+}
+.inner-nav .logo strong {
+    text-transform: uppercase;   
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:rgb(4, 53, 53); 
+}
+.nav-bar .inner-nav .listing{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.listing li > a{
+    color:rgb(4, 53, 53);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.5rem;
+    
+}
+.listing li>a:hover{
+    text-decoration: underline;
+    color:rgb(10, 176, 241);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+.inner-nav .user{
+    background-color: rgb(10, 176, 241,0.20);
+    padding: 1.2rem 1rem;
+    border-radius: 0.8rem;
+    margin-right: 2.5rem;
+}
+.inner-nav .user a{
+        text-transform: capitalize;
+        color:rgb(10, 176, 241);
+        font-size: 1rem;
+        font-weight: 700;
+}
+/*hero-section*/
+main{
+    height: 65vh;
+}
+.hero-section{
+    height:40vw;
+    position:relative;
+}
+.container{
+    margin: 0 7rem;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.box .left-part , .right-part{
+    flex-basis: 50%;
+    margin-top: 3rem;
+}
+.box h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    color:rgb(4, 53, 53);
+    text-transform:capitalize;
+    line-height: 1.5;
+}
+.box .heading{
+    max-width: 70%;
+}
+.box .heading span{
+    color:rgb(10, 176, 241);
+}
+.hero-section .box p{
+    margin-top: 0.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color:grey;
+}
+.hero-section .box .paragraph p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 80%;
+    line-height: 1.2;
+    color:rgb(4, 53, 53);
+}
+.left-part .booknow{
+    border: none;
+    background-color:rgb(10, 176, 241);
+    padding: 1.2rem 1.8rem;
+    border-radius: 0.8rem;
+    margin-top: 1.5rem;
+}
+.booknow i{
+    color:rgb(238, 249, 253);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.left-part .booknow a{
+    color:rgb(238, 249, 253);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.2rem;
+}
+.box .right-part img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* service overview section*/
+.service-overview{
+    background-color: rgb(10, 176, 241);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+.service-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 85%;
+}
+.service-boxes h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color:rgb(4, 53, 53); 
+    text-transform: capitalize;
+}
+.service-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(4, 53, 53); 
+}
+.service-list li{
+    padding: 0.5rem 1.8rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.service-list li p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.service-list .item-1 ,.item-2{
+    border-right: 2px solid skyblue;
+}
+
+/*Booking Services*/
+.cart {
+    width: 65%;
+    height: 40vh ;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 4px 0;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.booking-section{
+    height: 90vh;
+    padding:4rem;
+    background-color: rgb(223, 223, 223);
+}
+.grid-container{
+    margin-left: 10rem;
+    place-content:center;
+    gap:15px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    /* grid-template-rows: 300px 200px 200px; */
+   background-color: rgb(223, 223, 223);
+}
+.grid-item-1{
+    /* background-color: blue; */
+    grid-row-end: span 2;
+}
+.grid-item-3{
+    width: 65%;
+    height: 35vh ;
+    
+}
+.add-services , .total-services , .inner-grid{
+   background-color: rgb(238, 249, 253);
+   border-radius: 20px;
+}
+.add-services{
+    max-width: 100%;
+    padding: 1rem;
+}
+.add-services h2{
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:rgb(4, 53, 53);
+    line-height: 1.5;
+}
+.add-services p{
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color:rgb(100, 99, 99);
+}
+.add-services hr , .total-services hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(200, 200, 200);
+}
+.add-services .active-services .service-image{
+    width: 20px;
+    height: 20px;
+}
+.add-services ul{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.add-services ul li a{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color:rgb(4, 53, 53);  
+}
+.add-services ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.add-services ul li .rate ion-icon{
+    font-size: 0.5rem;
+    color: rgb(118, 118, 118);
+    margin-right: 0.3rem;
+
+}
+.add-services ul li .rate{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:rgb(4, 4, 210);
+}
+.active-services ul li button{
+    position: relative;
+    width: 130px;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.5rem;
+    color: rgb(30, 30, 30);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.add-btn span ion-icon{
+    color: rgb(34, 3, 3);
+    font-size: 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top:0.70rem;
+}
+.add-btn.remove {
+    width: 130px; 
+    border: 1px solid rgb(203, 8, 8);
+    color: rgb(203, 8, 8);
+    background-color: rgb(249, 210, 210); 
+}
+.add-btn.remove span ion-icon{
+    color: rgb(203, 8, 8);
+}
+.notice{
+ position: relative;
+}
+.notice ion-icon{
+    left: 0rem;
+    position: absolute;
+    font-size: 1rem;
+    color: rgb(4, 4, 210);
+}
+.notice p{
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(4, 4, 210);
+}
+.total-services{
+    max-width:100%;
+    padding:1rem;
+}
+.total-services h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:rgb(4, 53, 53);
+}
+.total-services table{
+    border-color:  rgb(200,200,200);
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.total-services table th{
+    background-color: rgb(200,200,200);
+}
+.total-services table .empty{
+    color: rgb(27, 27, 27);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.empty-text{
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+.empty-text p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-services table .empty ion-icon{
+    font-size: 2.3rem;
+}
+.total-services table .empty p{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgb(14, 13, 13);
+}
+.inner-grid{
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:0.5rem 1rem;
+    border-radius: 20px;
+}
+.inner-grid .item1{
+grid-column-end:span 3;
+width: 100%;
+}
+.inner-grid .item4{
+grid-column-end:span 2;
+}
+.inner-grid  input[type="text"]{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.3rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+.inner-grid input[type="email"] , .inner-grid input[type="tel"]{
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.inner-grid #book-now{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.7rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    background-color:rgb(10, 176, 241);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* quality description*/
+.quality-description{
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+.quality-description .description{
+    flex-basis: 22%;
+    height: 200px;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.quality-description .description h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:black;
+    margin: 0.5rem 0;
+}
+.quality-description .description p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(119, 120, 120);
+    line-height: 1.2;
+}
+.quality-description .description img{
+    width: 60px;
+    height: 60px;
+    object-fit:cover;
+}
+/*Newsletter Subscription Section*/
+.newsletter-subscription{
+height: 32vh;
+background-color: rgb(10, 176, 241);
+color:whitesmoke;
+}
+.main-subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.left-subscription , .right-subscription{
+    flex-basis: 50%;
+    padding: 2rem;
+}
+.left-subscription{
+    max-width: 100%;
+    display: flex;
+    justify-content:left;
+}
+.left-subscription h2{
+    max-width: 50%;
+    margin-left: 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.right-subscription{
+    max-width: 100%;
+}
+.right-subscription .adjust{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+}
+.right-subscription input{
+    padding: 1rem 1rem;
+    border:1.2px solid rgb(197, 196, 196);
+    background-color: rgba(13, 154, 209, 0.481);
+    color: whitesmoke;
+    width: 100%;
+}
+.right-subscription input::placeholder{
+    color: whitesmoke;
+}
+.right-subscription input:focus{
+    outline: none;
+}
+.right-subscription input:hover{
+    border: 1.2px solid rgb(84, 84, 84);
+}
+
+.right-subscription button{
+    margin-top: 1rem;
+    width: 48%;
+    padding: 1rem 1rem;
+    border:none;
+    color:rgb(10, 175, 240);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.right-subscription button:hover{
+    background-color: rgb(10, 175, 240);
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+/*footer section*/
+footer{
+    background-color: rgb(223, 223, 223);
+    padding: 2rem;
+}
+.footer-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 2em;
+}
+
+.footer-box .footer-logo a{
+    color:rgb(42, 43, 43);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.footer-box .footer-logo h3{
+   color: rgb(42, 42, 42);
+   text-transform: capitalize;
+   font-size: 1rem;
+   font-weight: 600;
+   margin-top: 1rem;
+   line-height: 1.5;
+}
+.footer-box .footer-logo p{
+   color:rgb(118, 119, 119);
+   text-transform: capitalize;
+   font-size: 1rem;
+   font-weight: 500;
+   line-height: 1;
+}
+.footer-box .footer-list h2{
+    color: rgb(42, 42, 42);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-box .footer-list ul li a{
+   margin:0.5rem 0 ;
+   line-height: 1.5;
+   text-align: left;
+   text-transform: capitalize;
+   font-size: 1rem;
+   font-weight: 500;
+   color:rgb(118, 119, 119);
+}
+.footer-box .footer-list ul li a:hover,
+.footer-box .footer-list ul li:hover ,
+.footer-box .footer-contact ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(42, 42, 42);
+}
+.footer-box .footer-contact h3{
+    margin-bottom: 0.5rem ;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(42, 42, 42);
+}
+.footer-box .footer-contact ul{
+    margin-top: 0.8rem;
+}
+.footer-box .footer-contact ul li{
+   text-align: left;
+   line-height: 1.5;
+   text-transform: capitalize;
+   font-size: 1rem;
+   font-weight: 500;
+   color:rgb(118, 119, 119);
+}
+.footer-box .footer-links h3{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:rgb(60, 61, 61);
+}
+.footer-box .footer-links ul{
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+   padding: 1rem 0;
+}
+.footer-box .footer-links ul li a{
+    font-size: 1.8rem;
+    color:rgb(60, 61, 61);
+}
+.footer-box .footer-links ul li a:hover{
+    color: rgb(10, 175, 240);
+    font-size: 2rem; 
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+}
