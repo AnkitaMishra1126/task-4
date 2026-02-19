@@ -346,7 +346,7 @@ tr:nth-child(even) {
 }
 .total-services{
     max-width:100%;
-    padding:1rem;
+    padding:1rem ;
 }
 .total-services h2{
     text-transform: capitalize;
@@ -372,20 +372,35 @@ tr:nth-child(even) {
 }
 .empty-text{
     text-align: center;
-    padding: 20px;
-    color: #666;
+    padding: 15px;
+    color: #373737;
 }
-.empty-text p{
+/* .empty-text p{
     font-size: 1rem;
-    font-weight: 600;
-}
+    font-weight: 800;
+} */
+
 .total-services table .empty ion-icon{
     font-size: 2.3rem;
 }
-.total-services table .empty p{
-    font-size: 0.6rem;
-    font-weight: 400;
+.total-services table .empty .empty-text .empty-text1{
+    font-size: 1rem;
+    font-weight: 600;
     color: rgb(14, 13, 13);
+}
+.total-services table .empty .empty-text .empty-para{
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+tfoot{
+    border-top:solid 1px gainsboro ;
+    margin-top: 0.2rem;
+}
+
+#totalAmount{
+    /* margin-top: 2rem; */
+    font-weight: 600;
 }
 .inner-grid{
     text-transform: capitalize;
@@ -419,7 +434,7 @@ grid-column-end:span 2;
 }
 
 .inner-grid #book-now{
-    margin-top: 1rem;
+    margin-top: 0.4rem;
     width: 100%;
     padding: 0.7rem 0;
     border: none;
